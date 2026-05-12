@@ -42,7 +42,7 @@ def generate_sangibu(category, context, extra_info=""):
     
     try:
         genai.configure(api_key=user_api_key)
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         prompt = f"""
         {GUIDELINE_SUMMARY}
